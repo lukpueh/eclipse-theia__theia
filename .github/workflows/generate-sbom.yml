@@ -62,7 +62,7 @@ jobs:
           cdxgen -r -o ${{ env.PRODUCT_PATH }}bom.json
 
       - name: Upload SBOM
-        uses: lukpueh/eclipse-csi__workflows/upload-sbom@cb20e0187681eabea09f8d41e0ff33772951caf0 # main
+        uses: eclipse-csi/workflows/upload-sbom@d83da6f2897e985d9d2b9541174c7ee5ee6d88ad # main
         with:
           sbom-file: ${{ env.PRODUCT_PATH }}/bom.json
           product-name: "theia"
